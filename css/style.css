@@ -1,0 +1,177 @@
+* {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background: black url("/images/background.jpg");
+  background-repeat: repeat;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.star-wars {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.star-wars-anime {
+  animation-name: star-wars;
+  animation-delay: 4s;
+  animation-duration: 4s;
+  animation-fill-mode: backwards;
+}
+
+
+ @keyframes star-wars {
+  from {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+} 
+
+
+
+
+.star {
+  animation-name: stars;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+.wars {
+  animation-name: stars;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes stars {
+  from {
+    transform: scale(1.7);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+.force {
+  color: white;
+  font-size: 54px;
+  margin: 20px 0px;
+  animation-name: forces;
+  animation-duration: 5s;
+}
+
+@keyframes forces {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.star-wars-text {
+  display: flex;
+  justify-content: center;
+  height: 1400px;
+  color: #feda4a;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 500px;
+  text-align: justify;
+}
+
+.crawl {
+  opacity: 0;
+  position: relative;
+  animation: crawl;
+  animation-delay: 6s;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.title {
+  font-size: 80px;
+  text-align: center;
+}
+
+.title h1 {
+  margin: 95px 0px;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+  0% {
+    opacity: 1;
+    top: 1000px;
+    transform: rotateX(20deg) translateZ(0);
+  }
+
+  100% {
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+    opacity: 0;
+  }
+}
+
+.main-card {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.characters {
+  margin: 76px 76px 0px 76px;
+}
+
+.characters h2 {
+  font-size: 50px;
+  border: 4px solid #3a3a3a;
+  border-right: 0px;
+  border-left: 0px;
+  padding: 5px;
+  color: #d0d0d0;
+  margin-bottom: 20px;
+}
+
+.card {
+  color: white;
+  background: #282727 url(/images/bg_hash_top@2x-1d6544f5cc3a.png) repeat;
+  border-radius: 5px;
+  width: 20%;
+}
+
+.card img {
+  height: 276px;
+  border-bottom: 2px solid rgb(255, 37, 74);
+  border-radius: 5px;
+}
+
+.container {
+  padding: 10px;
+}
+
+.container h3 {
+  padding: 2px;
+}
