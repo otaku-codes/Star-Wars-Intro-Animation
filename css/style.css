@@ -6,7 +6,8 @@
 }
 
 body {
-  background: black url("/images/background.jpg");
+  background: black;
+  background-image: url("../images/background.jpg");
   background-repeat: repeat;
 }
 
